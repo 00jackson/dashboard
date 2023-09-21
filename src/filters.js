@@ -1,4 +1,4 @@
-// Filters.js
+
 import { default as React, default as React, useState } from 'react';
 
 function Filters() {

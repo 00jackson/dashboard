@@ -1,23 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+
+import Papa from 'papaparse';
+import React, { useEffect, useState } from 'react';
+
 
 function App() {
+  const [csvData, setCsvData] = useState([]);
+
+  useEffect(() => {
+    // Replace 'data.csv' with the path to your CSV file.
+    fetch('/demo/dashboard/src/data.csv')
+      .then((response) => response.text())
+      .then((csv) => {
+        Papa.parse(csv, {
+          header: true, // Use the first row as headers
+          dynamicTyping: true, // Convert numeric values to numbers
+          complete: (result) => {
+            setCsvData(result.data);
+          },
+        });
+      });
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {/* Use csvData in your component */}
+      {csvData.map((row, index) => (
+        <div key={index}>
+          <span>{row.column1}</span>
+          <span>{row.column2}</span>
+          {/* Add more fields as needed */}
+        </div>
+      ))}
     </div>
   );
 }

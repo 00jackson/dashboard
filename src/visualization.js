@@ -1,12 +1,9 @@
-// Visualization.js
-
 import * as d3 from 'd3';
 import React from 'react';
 
 
 function Visualization() {
-    // Implement D3.js-based visualization here.
-    // Define a color scale
+
     const colorScale = d3.scaleOrdinal()
         .range(['#1f77b4', '#ff7f0e', '#2ca02c', '#d62728']); // Define your color range
 

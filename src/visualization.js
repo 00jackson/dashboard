@@ -5,15 +5,15 @@ import React from 'react';
 function Visualization() {
 
     const colorScale = d3.scaleOrdinal()
-        .range(['#1f77b4', '#ff7f0e', '#2ca02c', '#d62728']); // Define your color range
+        .range(['#1f77b4', '#ff7f0e', '#2ca02c', '#d62728']); 
 
     // Usage example:
-    const color = colorScale('Category A'); // Get a color for a category
+    const color = colorScale('Category A'); 
     // Sample data
     const data = [
         { category: 'Category A', intensity: 30, likelihood: 40, relevance: 50 },
         { category: 'Category B', intensity: 20, likelihood: 60, relevance: 70 },
-        // Add more data entries
+        
     ];
 
     // D3.js code to create a grouped bar chart
@@ -50,7 +50,7 @@ function Visualization() {
         .attr('height', d => height - y(d.value))
         .attr('fill', d => color(d.variable)); // You can define a color scale
 
-    // Add x and y axes, labels, and legends as needed
+    
 
     return (
         <div id="visualization">

@@ -1,4 +1,4 @@
-// Dashboard.js
+
 import React from 'react';
 import Filters from './filters';
 import Visualization from './visualization';

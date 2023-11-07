@@ -7,16 +7,16 @@ function Visualization() {
     const colorScale = d3.scaleOrdinal()
         .range(['#1f77b4', '#ff7f0e', '#2ca02c', '#d62728']); 
 
-    // Usage example:
+    // Usage:
     const color = colorScale('Category A'); 
-    // Sample data
+    // For Sample data:
     const data = [
         { category: 'Category A', intensity: 30, likelihood: 40, relevance: 50 },
         { category: 'Category B', intensity: 20, likelihood: 60, relevance: 70 },
         
     ];
 
-    // D3.js code to create a grouped bar chart
+    // D3.js code for grouped bar chart
     const svg = d3.select('#visualization').append('svg');
     const margin = { top: 20, right: 20, bottom: 30, left: 40 };
     const width = +svg.attr('width') - margin.left - margin.right;
@@ -54,7 +54,7 @@ function Visualization() {
 
     return (
         <div id="visualization">
-            {/* D3.js visualization */}
+            /* --------- D3.js visualization  -------- */
         </div>
     );
 }

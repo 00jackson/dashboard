@@ -25,7 +25,7 @@ function Filters() {
 
     return (
         <div>
-            {/* End Year Filter */}
+            /* -------- End Year Filter --------- */
             <label htmlFor="endYear">End Year:</label>
             <input
                 type="number"
@@ -34,7 +34,7 @@ function Filters() {
                 onChange={(e) => setEndYear(e.target.value)}
             />
 
-            {/* Topics Filter (Multi-select) */}
+            /* -------- Topics Filter (Multi-select)  ------ */
             <label htmlFor="topics">Topics:</label>
             <select
                 id="topics"
@@ -49,7 +49,7 @@ function Filters() {
                 ))}
             </select>
 
-            {/* Sector Filter */}
+            /* ---------- Sector Filter  --------- */
             <label htmlFor="sector">Sector:</label>
             <select
                 id="sector"
@@ -63,7 +63,7 @@ function Filters() {
                     </option>
                 ))}
             </select>
-            {/* End Year Filter */}
+            /* --------- End Year Filter -------- */
             <label htmlFor="endYear">End Year:</label>
             <input
                 type="number"
@@ -72,7 +72,7 @@ function Filters() {
                 onChange={(e) => setEndYear(e.target.value)}
             />
 
-            {/* Topics Filter (Multi-select) */}
+            /* ---------- Topics Filter (Multi-select) ------ */
             <label htmlFor="topics">Topics:</label>
             <select
                 id="topics"
@@ -87,7 +87,7 @@ function Filters() {
                 ))}
             </select>
 
-            {/* Sector Filter */}
+            /* ----------- Sector Filter ---------- */
             <label htmlFor="sector">Sector:</label>
             <select
                 id="sector"
@@ -102,7 +102,7 @@ function Filters() {
                 ))}
             </select>
 
-            {/* Region Filter */}
+            /* ------------ Region Filter ---------- */
             <label htmlFor="region">Region:</label>
             <select
                 id="region"
@@ -117,7 +117,7 @@ function Filters() {
                 ))}
             </select>
 
-            {/* PEST Filter */}
+            /* ----------- PEST Filter ----------- */
             <label htmlFor="pest">PEST:</label>
             <select
                 id="pest"
@@ -132,7 +132,7 @@ function Filters() {
                 ))}
             </select>
 
-            {/* Source Filter */}
+            /* ----------- Source Filter -------- */
             <label htmlFor="source">Source:</label>
             <select
                 id="source"
@@ -147,7 +147,7 @@ function Filters() {
                 ))}
             </select>
 
-            {/* SWOT Filter */}
+            /* ------------- SWOT Filter ----------- */
             <label htmlFor="swot">SWOT:</label>
             <select
                 id="swot"
@@ -162,7 +162,7 @@ function Filters() {
                 ))}
             </select>
 
-            {/* Country Filter */}
+            /* -------------- Country Filter---------- */
             <label htmlFor="country">Country:</label>
             <select
                 id="country"
@@ -177,7 +177,7 @@ function Filters() {
                 ))}
             </select>
 
-            {/* City Filter */}
+            /* ---------------- City Filter ---------- */
             <label htmlFor="city">City:</label>
             <select
                 id="city"
